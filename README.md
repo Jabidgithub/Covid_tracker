@@ -1,16 +1,50 @@
-# covid_tracker
 
-A new Flutter project.
+# Covid-19 Traker App
 
-## Getting Started
+An app to Track Covid-19 information by countries
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## API Reference
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### Get all items
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | https://disease.sh/v3/covid-19/ |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | https://disease.sh/v3/covid-19/all |
+| `id`      | `string` | https://disease.sh/v3/covid-19/countries |
+
+
+
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/Jabidgithub/Covid_tracker/master/images/ss/ss01.jpg)
+
+
+![App Screenshot](https://raw.githubusercontent.com/Jabidgithub/Covid_tracker/master/images/ss/ss02.jpg)
+
+
+![App Screenshot](https://raw.githubusercontent.com/Jabidgithub/Covid_tracker/master/images/ss/ss03.jpg)
+
+
+
+![App Screenshot](https://raw.githubusercontent.com/Jabidgithub/Covid_tracker/master/images/ss/ss04.jpg)
+
+
+![App Screenshot](https://raw.githubusercontent.com/Jabidgithub/Covid_tracker/master/images/ss/ss05.jpg)
+
+
+![App Screenshot](https://raw.githubusercontent.com/Jabidgithub/Covid_tracker/master/images/ss/ss06.jpg)
